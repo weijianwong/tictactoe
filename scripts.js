@@ -129,12 +129,13 @@ const gameController = (() => {
 
 const ScreenController = () => {
   let game = gameController;
-  let gameStarted = false;
   let turn = document.querySelector(".player-turn");
   let grids = document.getElementsByClassName("grid-item");
   let startButton = document.querySelector(".start-game");
+  let mainContent = document.querySelector(".main-content");
 
   const announceResult = () => {
+    mainContent.classList.add("disabled");
     const popupScreen = document.getElementById("popupScreen");
     const popupContent = document.getElementById("popupContent");
     const closeButton = document.getElementById("closeButton");
@@ -150,6 +151,7 @@ const ScreenController = () => {
     closeButton.addEventListener("click", function () {
       resetBoard();
       popupScreen.style.display = "none";
+      mainContent.classList.remove("disabled");
     });
   };
 
