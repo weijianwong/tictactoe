@@ -139,7 +139,7 @@ const ScreenController = () => {
     const popupScreen = document.getElementById("popupScreen");
     const popupContent = document.getElementById("popupContent");
     const closeButton = document.getElementById("closeButton");
-    popupScreen.style.display = "flex";
+    popupScreen.style.display = "block";
     if (game.getWinnerFound()) {
       popupContent.textContent = `Congratulations ${
         game.getWinner().name
