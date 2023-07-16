@@ -32,6 +32,10 @@ h2 {
   background-color: #ccc;
 }
 
+.player-turn {
+  font-size: 2vw;
+}
+
 .button-container {
   display: flex;
   align-items: center;
