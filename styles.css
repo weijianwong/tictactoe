@@ -16,14 +16,14 @@ h2 {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-template-rows: 10vw 10vw 10vw;
 }
 .grid-item {
   background: white;
   border: 1px solid black;
   display: flex;
-  font-size: 50px;
+  font-size: 5vw;
   justify-content: center;
   align-items: center;
   color: red;
@@ -35,16 +35,17 @@ h2 {
 .button-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.5vw;
 }
 .button {
-  width: 150px;
-  height: 50px;
+  font-size: 1vw;
+  width: 10vw;
+  height: 4vw;
   color: black;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 0.5vw;
 }
 .button:hover {
   background-color: grey;
@@ -52,13 +53,13 @@ h2 {
 #popupScreen {
   display: none;
   position: absolute;
-  width: 400px;
+  width: 40vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
   border: 0.5px black solid;
-  border-radius: 20px;
+  border-radius: 1vw;
   justify-content: center;
   align-items: center;
 }
@@ -67,12 +68,14 @@ h2 {
   text-align: center;
   font-weight: bold;
   color: black;
-  margin: 100px auto;
-  padding: 20px;
+  margin: 1vw auto;
+  padding: 2vw;
 }
 
 #closeButton {
-  margin-top: 10px;
+  height: 2vw;
+  width: auto;
+  margin-top: 1vw;
   position: absolute;
   cursor: pointer;
   top: 0;
